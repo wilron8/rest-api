@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "dc35df34-7ea7-43c1-afdd-c0aea1935cb1",
+		"name": "rest_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21321404"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "$1$6fjNSBRR$7lx.mxo/q1LbNO7f5.7w8.",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Wilfred",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Ronquillo",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test address",
+							"type": "text"
+						},
+						{
+							"key": "postal",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "PH",
+							"type": "text"
+						},
+						{
+							"key": "accountType",
+							"value": "customers",
+							"type": "text"
+						},
+						{
+							"key": "miles",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/rest/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest",
+						"api",
+						"post"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "$1$6fjNSBRR$7lx.mxo/q1LbNO7f5.7w8.",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/rest/api/get?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest",
+						"api",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "$1$6fjNSBRR$7lx.mxo/q1LbNO7f5.7w8.",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"1\",\"firstName\": \"WilfredtxD\",\"lastName\": \"RonquillotxD\",\"address\": \"test addressxx\",\"postal\": \"1234xx\",\"country\": \"PHx\",\"accountType\": \"customersx\",\"miles\": \"1001\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/rest/api/put",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest",
+						"api",
+						"put"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "$1$6fjNSBRR$7lx.mxo/q1LbNO7f5.7w8.",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/rest/api/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest",
+						"api",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1",
+			"type": "string"
+		}
+	]
+}
